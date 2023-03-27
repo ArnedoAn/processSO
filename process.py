@@ -36,7 +36,13 @@ def sjf(procesos):
     return procesosOrdenados
 
 
-nProcesos = int(input("Ingrese el número de procesos (entre 4 y 10): "))
+nProcesos = 0
+while True:
+    nProcesos = int(input("Ingrese el número de procesos (entre 4 y 10): "))
+    if nProcesos > 4 and nProcesos < 10:
+        break
+    else:
+        print("El número de procesos debe estar entre 4 y 10")
 procesos = []
 for i in range(nProcesos):
     llegada = int(input(f"Ingrese el tiempo de llegada del proceso {i+1}: "))
