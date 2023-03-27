@@ -12,6 +12,11 @@ class Proceso:
 
 
 def sjf(procesos):
+    """
+    Shortest Job First (SJF) es un algoritmo de planificación de procesos que selecciona el proceso con el tiempo de CPU más corto para ejecutar primero.
+    """
+
+    # Lamba es utilizado para obtener un atributo del objeto de un objeto iterable (Lista), para luego ordenarlos respecto a ese atributo (Tiempo de llegada) ."
     procesos = sorted(procesos, key=lambda proceso: proceso.llegada)
 
     tiempoActual = 0
@@ -29,7 +34,9 @@ def sjf(procesos):
             tiempoActual += 1
             continue
 
-        procesoMasCorto = min(procesosDisponibles, key=lambda proceso: proceso.cpu)
+        # Lamba es utilizado para obtener un atributo del objeto de un objeto iterable (Lista), para luego extraer el menor respecto a ese atributo (Menor tiempo de CPU) ."
+        procesoMasCorto = min(procesosDisponibles,
+                              key=lambda proceso: proceso.cpu)
         procesoMasCorto.comienzo = tiempoActual
         procesoMasCorto.final = tiempoActual + procesoMasCorto.cpu
         procesoMasCorto.espera = procesoMasCorto.comienzo - procesoMasCorto.llegada
@@ -41,21 +48,24 @@ def sjf(procesos):
 
 
 nProcesos = 0
+
 while True:
     nProcesos = int(input("Ingrese el número de procesos (entre 4 y 10): "))
     if nProcesos > 4 and nProcesos < 10:
         break
     else:
         print("El número de procesos debe estar entre 4 y 10")
-procesos = []
+
+procesosAOrdenar = []
+
 for i in range(nProcesos):
     llegada = int(input(f"Ingrese el tiempo de llegada del proceso {i+1}: "))
     cpu = int(
         input(f"Ingrese el tiempo de CPU requerido por el proceso {i+1}: "))
-    procesos.append(Proceso(i+1, llegada, cpu))
+    procesosAOrdenar.append(Proceso(i+1, llegada, cpu))
 
-procesosSjf = sjf(procesos)
+procesosSjf = sjf(procesosAOrdenar)
 
 print("Resultados SJF:")
-for proceso in procesosSjf:
-    print(proceso)
+for procesoSalida in procesosSjf:
+    print(procesoSalida)
