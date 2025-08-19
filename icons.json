@@ -1,0 +1,38 @@
+[
+  {
+    "id": "sunflower",
+    "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=24&h=24&fit=crop&crop=center",
+    "alt": "Girasol",
+    "fallback": "sunflower"
+  },
+  {
+    "id": "star",
+    "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=24&h=24&fit=crop&crop=center",
+    "alt": "Estrella",
+    "fallback": "star"
+  },
+  {
+    "id": "flower",
+    "url": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=24&h=24&fit=crop&crop=center",
+    "alt": "Flor",
+    "fallback": "flower"
+  },
+  {
+    "id": "butterfly",
+    "url": "https://images.unsplash.com/photo-1444927714506-8492d94b5ba0?w=24&h=24&fit=crop&crop=center",
+    "alt": "Mariposa",
+    "fallback": "butterfly"
+  },
+  {
+    "id": "sun",
+    "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=24&h=24&fit=crop&crop=center",
+    "alt": "Sol",
+    "fallback": "sun"
+  },
+  {
+    "id": "leaf",
+    "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=24&h=24&fit=crop&crop=center",
+    "alt": "Hoja",
+    "fallback": "leaf"
+  }
+]
