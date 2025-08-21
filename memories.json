@@ -2,7 +2,8 @@
   {
     "image": "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "text": "Testing para implemetnaicon",
-    "song": "https://open.spotify.com/embed/track/4LRPiXqCikLlN15c3yImP7?utm_source=generator&theme=0"
+    "song": "https://open.spotify.com/embed/track/4LRPiXqCikLlN15c3yImP7?utm_source=generator&theme=0",
+    "title": "Testing de titulo"
   },
   {
     "image": "https://images.pexels.com/photos/1024969/pexels-photo-1024969.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -24,4 +25,5 @@
     "text": "Cada aventura juntos es una página nueva en nuestro libro de amor. Desde pequeños cafés hasta grandes aventuras, cada momento contigo es un regalo que atesoro en mi corazón.",
     "song": "https://open.spotify.com/embed/track/37BZB0z9T5N7HQNHf0PiTJ?utm_source=generator&theme=0"
   }
+
 ]
